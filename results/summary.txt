@@ -1,0 +1,33 @@
+SUMMARY OF ANALYSIS
+============================================================
+Main threshold: 1.5  (sensitivity: 1.3 and 2.0)
+
+Repeatability, run 2 vs run 3 (relative difference of medians, all 33 sizes)
+  median: 1.8 %    maximum: 41.9 % at 2 MB
+
+Power-state effect, run 1 / mean(run 2, run 3)
+  4-16 KB (L1 region): 1.47
+  256 MB (largest size): 1.35
+  all sizes: min 1.18, median 1.47, max 2.78
+
+Transitions found (bracket = largest size before the step - next size)
+  Run 1 (unplugged)  threshold 1.5: 32 KB - 48 KB, 256 KB - 384 KB, 512 KB - 768 KB, 1.5 MB - 2 MB
+  Run 1 (unplugged)  threshold 1.3: 32 KB - 48 KB, 192 KB - 256 KB, 512 KB - 768 KB
+  Run 1 (unplugged)  threshold 2.0: none
+  Run 2              threshold 1.5: 32 KB - 48 KB, 512 KB - 768 KB, 3 MB - 4 MB
+  Run 2              threshold 1.3: 32 KB - 48 KB, 512 KB - 768 KB, 2 MB - 3 MB
+  Run 2              threshold 2.0: none
+  Run 3              threshold 1.5: 32 KB - 48 KB, 512 KB - 768 KB, 3 MB - 4 MB
+  Run 3              threshold 1.3: 32 KB - 48 KB, 384 KB - 512 KB, 1.5 MB - 2 MB, 3 MB - 4 MB
+  Run 3              threshold 2.0: none
+
+Comparison with published sizes (main threshold)
+  Run 1 (unplugged)  L1 data (32 KB)  nearest bracket 32 KB - 48 KB    inside: True  lower/published: 1.000
+  Run 1 (unplugged)  L2 (512 KB)      nearest bracket 512 KB - 768 KB  inside: True  lower/published: 1.000
+  Run 1 (unplugged)  L3 (8 MB)        nearest bracket 1.5 MB - 2 MB    inside: False lower/published: 0.188
+  Run 2              L1 data (32 KB)  nearest bracket 32 KB - 48 KB    inside: True  lower/published: 1.000
+  Run 2              L2 (512 KB)      nearest bracket 512 KB - 768 KB  inside: True  lower/published: 1.000
+  Run 2              L3 (8 MB)        nearest bracket 3 MB - 4 MB      inside: False lower/published: 0.375
+  Run 3              L1 data (32 KB)  nearest bracket 32 KB - 48 KB    inside: True  lower/published: 1.000
+  Run 3              L2 (512 KB)      nearest bracket 512 KB - 768 KB  inside: True  lower/published: 1.000
+  Run 3              L3 (8 MB)        nearest bracket 3 MB - 4 MB      inside: False lower/published: 0.375
