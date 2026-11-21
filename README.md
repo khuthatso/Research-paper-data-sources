@@ -3,8 +3,8 @@
 Reproducibility package for a research paper written for the **Student Research Challenge**,
 *Architecture of Computers* course, Vistula University, 2026/27.
 
-- **Author:** [your name]
-- **Student ID:** [your student ID]
+- **Author:** Khuthatso Courage Malapela
+- **Student ID:** 77797
 
 ## What this study does
 
@@ -50,8 +50,8 @@ of the laptop:
 | File | Condition |
 |---|---|
 | `data/run1.csv` | Laptop unplugged (battery power) |
-| `data/run2.csv` | [fill in: for example, plugged in, power mode ...] |
-| `data/run3.csv` | [fill in: same as run 2] |
+| `data/run2.csv` | plugged in |
+| `data/run3.csv` |  same as run 2 |
 
 ## How to run the benchmark (C#)
 
